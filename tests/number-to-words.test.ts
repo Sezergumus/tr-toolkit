@@ -78,6 +78,8 @@ describe('numberToWords', () => {
     expect(numberToWords(1250, { case: 'upper' })).toBe('BİN İKİ YÜZ ELLİ');
     expect(numberToWords(1250, { case: 'first' })).toBe('Bin iki yüz elli');
     expect(numberToWords(1250, { case: 'words' })).toBe('Bin İki Yüz Elli');
+    expect(numberToWords(1250, { case: 'lower' })).toBe('bin iki yüz elli');
+    expect(numberToWords(0, { case: 'first' })).toBe('Sıfır');
   });
 
   it('should handle bigint and string inputs', () => {

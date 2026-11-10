@@ -126,13 +126,6 @@ function normalizeForComparison(word: string): string {
 }
 
 /**
- * Escapes regex special characters.
- */
-function escapeRegex(str: string): string {
-  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-}
-
-/**
  * Builds the set of profanity words to check against.
  */
 function buildProfanitySet(

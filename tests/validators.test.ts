@@ -56,6 +56,7 @@ describe('VKN Validator & Masker', () => {
   it('should validate valid VKN', () => {
     expect(validateVKN('1234567890')).toBe(true);
     expect(validateVKN(1234567890)).toBe(true);
+    expect(validateVKN('0000000001')).toBe(true);
   });
 
   it('should invalidate incorrect VKN', () => {
@@ -121,6 +122,10 @@ describe('IBAN Validator, Formatter & Masker', () => {
     expect(masked.startsWith(`TR${check} 1234 **** **** **** ****`)).toBe(true);
     expect(maskIBAN('')).toBe('');
     expect(maskIBAN('123')).toBe('123');
+    // Test shorter parts
+    expect(maskIBAN('TR123456')).toBe('TR12 3456');
+    // Test custom mask char
+    expect(maskIBAN(validTrIban, '#')).toContain('####');
   });
 });
 
@@ -152,6 +157,7 @@ describe('Plate Validator, Formatter & City lookup', () => {
     expect(formatPlate('06a1234')).toBe('06 A 1234');
     expect(formatPlate('34tb1234')).toBe('34 TB 1234');
     expect(formatPlate('01b12345')).toBe('01 B 12345');
+    expect(formatPlate('34 A 12')).toBe('34A12');
     expect(formatPlate('')).toBe('');
     // @ts-expect-error test invalid args
     expect(formatPlate(null)).toBe('');

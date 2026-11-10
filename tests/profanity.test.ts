@@ -105,6 +105,7 @@ describe('findProfanities', () => {
   it('should return empty array for clean text or invalid input', () => {
     expect(findProfanities('Harika bir gün')).toEqual([]);
     expect(findProfanities('')).toEqual([]);
+    expect(findProfanities('!@#$%^&*()')).toEqual([]);
     // @ts-expect-error test invalid args
     expect(findProfanities(null)).toEqual([]);
   });

@@ -44,11 +44,7 @@ export function validateIBAN(iban: string): boolean {
   }
 
   // ISO 7064 Modulo 97 check using BigInt
-  try {
-    return BigInt(numericString) % 97n === 1n;
-  } catch {
-    return false;
-  }
+  return BigInt(numericString) % 97n === 1n;
 }
 
 /**
