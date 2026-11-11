@@ -480,4 +480,4 @@ npm run build
 
 ## License
 
-[MIT](LICENSE) © 2026 [Sezer Gümüş](https://github.com/sezer2004)
+[MIT](LICENSE) © 2026 [Sezer Gümüş](https://github.com/Sezergumus)
