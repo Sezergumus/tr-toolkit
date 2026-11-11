@@ -2,7 +2,7 @@
 
 > 🇹🇷 Ultra-fast, zero-dependency, production-ready Turkish language processing, validation, formatting, and text manipulation toolkit for Node.js and the browser.
 
-[![npm version](https://img.shields.io/npm/v/tr-toolkit.svg?style=flat-square)](https://www.npmjs.com/package/tr-toolkit)
+[![npm version](https://img.shields.io/npm/v/@sezergumus/tr-toolkit.svg?style=flat-square)](https://www.npmjs.com/package/@sezergumus/tr-toolkit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg?style=flat-square)](https://www.typescriptlang.org/)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-success.svg?style=flat-square)](package.json)
