@@ -78,7 +78,7 @@ import {
 } from 'tr-toolkit';
 
 // Turkish-aware slug
-console.log(slugify('Şemsi Paşa Pasajında Güzel Bir Gün!'));
+console.log(slugify('Şemsi Paşa Pasajında Güzel Bir Gün!', { strict: true }));
 // -> "semsi-pasa-pasajinda-guzel-bir-gun"
 
 // TCKN official checksum validation
