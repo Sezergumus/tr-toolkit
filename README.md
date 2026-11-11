@@ -49,13 +49,13 @@ Install using your favorite package manager:
 
 ```bash
 # npm
-npm install tr-toolkit
+npm install @sezergumus/tr-toolkit
 
 # pnpm
-pnpm add tr-toolkit
+pnpm add @sezergumus/tr-toolkit
 
 # yarn
-yarn add tr-toolkit
+yarn add @sezergumus/tr-toolkit
 
 # bun
 bun add tr-toolkit

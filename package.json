@@ -1,5 +1,5 @@
 {
-  "name": "tr-toolkit",
+  "name": "@sezergumus/tr-toolkit",
   "version": "1.0.0",
   "description": "Zero-dependency, high-performance Turkish language, validation, formatting, and text processing toolkit for Node.js and the browser.",
   "author": "Sezer Gümüş <sezer2004@gmail.com> (https://github.com/Sezergumus)",
@@ -82,5 +82,8 @@
   "bugs": {
     "url": "https://github.com/Sezergumus/tr-toolkit/issues"
   },
-  "homepage": "https://github.com/Sezergumus/tr-toolkit#readme"
+  "homepage": "https://github.com/Sezergumus/tr-toolkit#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
