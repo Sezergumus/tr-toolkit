@@ -1,82 +1,82 @@
-﻿{
-    "name":  "tr-toolkit",
-    "version":  "1.0.0",
-    "description":  "Zero-dependency, high-performance Turkish language, validation, formatting, and text processing toolkit for Node.js and the browser.",
-    "author":  "Sezer GÃ¼mÃ¼ÅŸ",
-    "license":  "MIT",
-    "type":  "module",
-    "main":  "./dist/index.cjs",
-    "module":  "./dist/index.js",
-    "types":  "./dist/index.d.ts",
-    "exports":  {
-                    ".":  {
-                              "types":  "./dist/index.d.ts",
-                              "import":  "./dist/index.js",
-                              "require":  "./dist/index.cjs"
-                          },
-                    "./slugify":  {
-                                      "types":  "./dist/slugify.d.ts",
-                                      "import":  "./dist/slugify.js",
-                                      "require":  "./dist/slugify.cjs"
-                                  },
-                    "./validators":  {
-                                         "types":  "./dist/validators/index.d.ts",
-                                         "import":  "./dist/validators/index.js",
-                                         "require":  "./dist/validators/index.cjs"
-                                     },
-                    "./number-to-words":  {
-                                              "types":  "./dist/number-to-words.d.ts",
-                                              "import":  "./dist/number-to-words.js",
-                                              "require":  "./dist/number-to-words.cjs"
-                                          },
-                    "./currency":  {
-                                       "types":  "./dist/currency.d.ts",
-                                       "import":  "./dist/currency.js",
-                                       "require":  "./dist/currency.cjs"
-                                   },
-                    "./profanity":  {
-                                        "types":  "./dist/profanity.d.ts",
-                                        "import":  "./dist/profanity.js",
-                                        "require":  "./dist/profanity.cjs"
-                                    },
-                    "./package.json":  "./package.json"
-                },
-    "files":  [
-                  "dist"
-              ],
-    "keywords":  [
-                     "turkish",
-                     "turkey",
-                     "tÃ¼rkÃ§e",
-                     "slugify",
-                     "tckn",
-                     "vkn",
-                     "iban",
-                     "plate",
-                     "phone",
-                     "currency",
-                     "number-to-words",
-                     "profanity",
-                     "validator",
-                     "toolkit"
-                 ],
-    "scripts":  {
-                    "build":  "tsup",
-                    "test":  "vitest run",
-                    "test:watch":  "vitest",
-                    "test:coverage":  "vitest run --coverage",
-                    "typecheck":  "tsc --noEmit",
-                    "prepublishOnly":  "npm run build"
-                },
-    "devDependencies":  {
-                            "@types/node":  "^22.13.5",
-                            "@vitest/coverage-v8":  "^3.0.6",
-                            "tsup":  "^8.4.0",
-                            "typescript":  "^5.7.3",
-                            "vitest":  "^3.0.6"
-                        },
-    "repository":  {
-                       "type":  "git",
-                       "url":  "git+https://github.com/sezer2004/tr-toolkit.git"
-                   }
+{
+  "name": "tr-toolkit",
+  "version": "1.0.0",
+  "description": "Zero-dependency, high-performance Turkish language, validation, formatting, and text processing toolkit for Node.js and the browser.",
+  "author": "Sezer Gümüş <sezer2004@gmail.com> (https://github.com/sezer2004)",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./slugify": {
+      "types": "./dist/slugify.d.ts",
+      "import": "./dist/slugify.js",
+      "require": "./dist/slugify.cjs"
+    },
+    "./validators": {
+      "types": "./dist/validators/index.d.ts",
+      "import": "./dist/validators/index.js",
+      "require": "./dist/validators/index.cjs"
+    },
+    "./number-to-words": {
+      "types": "./dist/number-to-words.d.ts",
+      "import": "./dist/number-to-words.js",
+      "require": "./dist/number-to-words.cjs"
+    },
+    "./currency": {
+      "types": "./dist/currency.d.ts",
+      "import": "./dist/currency.js",
+      "require": "./dist/currency.cjs"
+    },
+    "./profanity": {
+      "types": "./dist/profanity.d.ts",
+      "import": "./dist/profanity.js",
+      "require": "./dist/profanity.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "turkish",
+    "turkey",
+    "tÃ¼rkÃ§e",
+    "slugify",
+    "tckn",
+    "vkn",
+    "iban",
+    "plate",
+    "phone",
+    "currency",
+    "number-to-words",
+    "profanity",
+    "validator",
+    "toolkit"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "@vitest/coverage-v8": "^3.0.6",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sezer2004/tr-toolkit.git"
+  }
 }
